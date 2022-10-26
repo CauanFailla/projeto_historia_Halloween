@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'halloween';
+    src: url('../fontes/halloween-ttf.ttf') format('truetype');
+}
+
+:root {
+    --cor1: #A287E6;
+    --cor2: #6E41E0;
+    --cor3: #5532AD;
+    --cor4: #301C61;
+    --cor5: #554C6B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: 'halloween', cursive;
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 1.3em;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    text-indent: 30px;
+    line-height: 1.4em;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
+}
+
+main h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--cor3);
+    font-size: 2em;
+}
+
+main p {
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.imagem {
+    padding-top: 30vh;
+    padding-bottom: 50vh;
+}
+
+
+#fundo_1 {
+    background-image: url('../imagens/candles-1868640_1920.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+.video {
+    position: relative;
+    padding-bottom: 59%;
+    background-color: var(--cor3);
+    
+}
+
+iframe {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor4);
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+
+}
+
+aside h2 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F383';
+}
